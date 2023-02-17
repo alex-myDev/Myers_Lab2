@@ -42,7 +42,26 @@ public class ParseInt_Error
 
         Refined Algo:
         Import Scanner class
-          ;l.
+          BEGIN MAIN
+                1. DATA DECLARATION:
+                    String stringBeforeParse
+                    int convertedStringInput
+                    int counter
+                instantiate object of Scanner
+                counter = 0
+                2. BEGIN DO WHILE
+                    3. BEGIN TRY
+                        PRINT "Enter an integer value"
+                        Input to stringBeforeParse
+                        parseInt stringBeforeParse -> convertedStringInput
+                        counter++
+                    END TRY
+                    4. BEGIN CATCH
+                        PRINT "You tried to input a non-integer!"
+                        PRINT exception
+                    END CATCH
+                END DO WHILE (count < 10)
+            END MAIN
     ---------------------------------------------------------------------*/
     public static void main(String[] args)
     {
